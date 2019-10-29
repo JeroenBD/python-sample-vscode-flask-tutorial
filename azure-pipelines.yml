@@ -19,3 +19,5 @@ steps:
     repository: '$(imageName)'
     command: 'buildAndPush'
     Dockerfile: 'Dockerfile'
+    tags: |
+      test1
