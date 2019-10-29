@@ -20,4 +20,4 @@ steps:
     command: 'buildAndPush'
     Dockerfile: 'Dockerfile'
     tags: |
-      v1
+      v1.1
