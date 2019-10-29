@@ -17,5 +17,5 @@ steps:
   inputs:
     containerRegistry: 'ConnectionACRJeroenBD'
     repository: '$(imageName)'
-    command: 'build'
+    command: 'buildAndPush'
     Dockerfile: 'Dockerfile'
