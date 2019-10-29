@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: python-flask
-        image: acrsandboxjeroenbd.azurecr.io/pipelines-python-tutorial-docker:test1
+        image: acrsandboxjeroenbd.azurecr.io/pipelines-python-tutorial-docker:v1
         resources:
           requests:
             cpu: 100m
