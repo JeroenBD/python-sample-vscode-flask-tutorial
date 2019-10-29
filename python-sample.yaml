@@ -23,7 +23,8 @@ spec:
             cpu: 250m
             memory: 256Mi
         ports:
-        - containerPort: 80
+          - name: http
+            containerPort: 5000 # ports to expose from the container
 ---
 apiVersion: v1
 kind: Service
@@ -33,5 +34,6 @@ spec:
   type: LoadBalancer
   ports:
   - port: 80
+    targetPort: 5000
   selector:
     app: python-flask
